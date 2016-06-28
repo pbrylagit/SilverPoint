@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+	"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	
+	<definition name="baseTemplate" template="/WEB-INF/tiles/service-template/baseTemplate.jsp">
+		<put-attribute name="content" value="" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/service-template/footer.jsp" />
+	</definition>
+	
+	<definition name="error403" extends="baseTemplate">
+		<put-attribute name="content" value="/WEB-INF/views/error403.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/service-template/footer.jsp" />
+	</definition>
+	
+	<definition name="service/addService" extends="baseTemplate">
+		<put-attribute name="content" value="/WEB-INF/views/service/addService.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/service-template/footer.jsp" />
+	</definition>
+	
+	<definition name="users/addUser" extends="baseTemplate">
+		<put-attribute name="content" value="/WEB-INF/views/users/addUser.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/service-template/footer.jsp" />
+	</definition>
+	
+	<definition name="service/editService" extends="baseTemplate">
+		<put-attribute name="content" value="/WEB-INF/views/service/editService.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/service-template/footer.jsp" />
+	</definition>
+	
+	<definition name="users/editUser" extends="baseTemplate">
+		<put-attribute name="content" value="/WEB-INF/views/users/editUser.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/service-template/footer.jsp" />
+	</definition>
+	
+	<definition name="login" extends="baseTemplate">
+		<put-attribute name="content" value="/WEB-INF/views/login.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/service-template/footer.jsp" />
+	</definition>
+	
+	<definition name="users/userNotFound" extends="baseTemplate">
+		<put-attribute name="content" value="/WEB-INF/views/users/userNotFound.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/service-template/footer.jsp" />
+	</definition>
+	
+	<definition name="users/users" extends="baseTemplate">
+		<put-attribute name="content" value="/WEB-INF/views/users/users.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/service-template/footer.jsp" />
+	</definition>
+	
+	<definition name="users/usersBlocks" extends="baseTemplate">
+		<put-attribute name="content" value="/WEB-INF/views/users/usersBlocks.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/service-template/footer.jsp" />
+	</definition>
+	
+	<definition name="service/service" extends="baseTemplate">
+		<put-attribute name="content" value="/WEB-INF/views/service/service.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/service-template/footer.jsp" />
+	</definition>
+	
+	<definition name="service/serviceNotFound" extends="baseTemplate">
+		<put-attribute name="content" value="/WEB-INF/views/service/serviceNotFound.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/service-template/footer.jsp" />
+	</definition>
+	
+	<definition name="welcome" extends="baseTemplate">
+		<put-attribute name="content" value="/WEB-INF/views/welcome.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/service-template/footer.jsp" />
+	</definition>
+	
+</tiles-definitions>

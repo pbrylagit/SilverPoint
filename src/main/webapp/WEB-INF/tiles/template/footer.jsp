@@ -1,0 +1,1 @@
+<p>&copy; SilverPoint 2016</p>
